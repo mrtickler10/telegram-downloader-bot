@@ -3,8 +3,7 @@ from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filte
 import yt_dlp
 import os
 
-TOKEN = os.getenv("TOKEN")
-
+TOKEN = "8604112617:AAFzOdCVwFRBIgeNN7POscrRaN-HJKpTghU"
 
 async def baixar_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text
