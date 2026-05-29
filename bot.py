@@ -13,7 +13,7 @@ async def baixar_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         ydl_opts = {
             'outtmpl': 'video.%(ext)s',
-            'format': 'mp4'
+            'format': 'best[height<=480]'
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
